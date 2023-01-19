@@ -4,7 +4,7 @@ import './Map.css';
 
 const Map = () => {
 
-  const mapContainer = useRef('null');
+  const mapContainer = useRef(null);
   const map = useRef(null);
   const [lng] = useState(139.753);
   const [lat] = useState(35.6844);
@@ -21,7 +21,9 @@ const Map = () => {
   });
 
   return (
-    <div ref={mapContainer} className="map" />
+    <div className="map-wrap">
+      <div ref={mapContainer} className="map" />
+    </div>
   )
 }
 
