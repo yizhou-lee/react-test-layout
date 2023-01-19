@@ -9,6 +9,7 @@ import {
 } from '@ant-design/icons';
 import { Layout, Menu, theme } from 'antd';
 import Map from './components/Map';
+import FloatBut from './components/FloatBut';
 
 const { Header, Sider, Content } = Layout;
 
@@ -60,11 +61,12 @@ function App() {
         </Header>
         <Content
           style={{
-            margin: '24px 16px',
+            margin: '0',
             background: colorBgContainer,
           }}
         >
           <Map />
+          <FloatBut />
         </Content>
       </Layout>
     </Layout>
